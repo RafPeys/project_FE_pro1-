@@ -1,0 +1,234 @@
+body {
+  font-family: Oswald;
+  color: #404149;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+p,
+h1,
+h2,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container_hero {
+  padding-top: 192px;
+}
+.hero {
+  background-image: url("./images/bridge.jpg");
+  background-color: rgba(64, 65, 73, 0.9);
+}
+.hero_title {
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.hero_description {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.hero_dates {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 57px 130px;
+}
+.hero_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero_years {
+  color: #f7654a;
+  margin-bottom: 25px;
+  font-size: 72px;
+  font-weight: 500;
+}
+.hero_list_title {
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.hero_list_description {
+  color: #999;
+  font-size: 18px;
+  font-weight: 500;
+}
+.container_projects {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.projects_dates {
+  display: flex;
+  gap: 30px;
+}
+.title_container {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.projects_image {
+  margin-bottom: 45px;
+}
+.projects_box {
+  margin-bottom: 15px;
+  background-color: #f7654a;
+  width: 55px;
+  height: 6px;
+}
+.projects_title {
+  margin-bottom: 20px;
+  color: #404149;
+  font-size: 24px;
+  font-weight: 500;
+}
+.projects_descr {
+  color: #999;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+.request {
+  background-color: #f7654a;
+  display: flex;
+}
+.container_request {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 45px;
+}
+.title_request {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.description_request {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.button {
+  background: #fff;
+  padding: 15px 46px;
+  font-family: Oswald;
+  text-transform: uppercase;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.title_container {
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+}
+.buildings_dates {
+  display: flex;
+  gap: 30px;
+}
+.services_item3 {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding-top: 59px;
+  padding-bottom: 59px;
+  padding-left: 86px;
+  padding-right: 92px;
+}
+.service_img3 {
+  color: #f7654a;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Font Awesome 5 Pro;
+  font-size: 48px;
+  font-weight: 400;
+}
+.service_title3 {
+  color: #000;
+
+  text-align: center;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0.42px;
+}
+.service_img4 {
+  color: #f7654a;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-family: Font Awesome 5 Pro;
+  font-size: 48px;
+  font-weight: 400;
+}
+.service_title4 {
+  color: #000;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0.42px;
+}
+.contacts_img {
+  color: #f7654a;
+  text-align: center;
+  font-family: Font Awesome 5 Pro;
+  font-size: 48px;
+  font-weight: 400;
+}
+.contacts_title {
+  color: #999;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.contacts_descr {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer {
+  background-color: #404149;
+}
+.container_footer {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.title_descr {
+  font-family: Open Sans;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.title_footer {
+  font-family: Open Sans;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
