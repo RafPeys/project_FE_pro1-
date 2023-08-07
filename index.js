@@ -130,7 +130,7 @@ function heroItem(element) {
 function createList() {
   heroContainer.append(...array1.map((element) => heroItem(element)));
 }
-console.log(heroContainer);
+
 createList();
 
 // второй массив
@@ -240,3 +240,28 @@ function renderContacts() {
   contacts.append(...array5.map((element) => renderContactItem(element)));
 }
 renderContacts();
+
+// Модальное окно и слушатель события по кнопке
+
+const btn = document.querySelector(".button");
+
+const createModal = () => {
+  const backdrop = document.createElement("div");
+  backdrop.setAttribute("class", "backdrop");
+  const modalWindow = document.createElement("div");
+  modalWindow.setAttribute("class", "modal_window");
+  const body = document.querySelector("body");
+  const titleForModal = document.createElement("p");
+  titleForModal.setAttribute("class", "title_modal");
+  titleForModal.innerText = "Наши услуги";
+  const btnClose = document.createElement("button");
+  btn.innerText = "Закрыть";
+
+  modalWindow.append(titleForModal, btnClose);
+  backdrop.append(modalWindow);
+  body.append(backdrop);
+  console.log();
+};
+
+btn.addEventListener("click", createModal);
+console.log("click");
