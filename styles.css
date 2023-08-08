@@ -148,6 +148,7 @@ ul {
   color: #000;
   font-size: 36px;
   font-weight: 500;
+  margin-top: 150px;
 }
 .buildings_dates {
   display: flex;
@@ -156,18 +157,12 @@ ul {
 .services_item3 {
   text-align: center;
   background-color: #f7f7f7;
-  padding-top: 59px;
-  padding-bottom: 59px;
-  padding-left: 86px;
-  padding-right: 92px;
+  padding: 59px 92px 59px 86px;
 }
 .service_img3 {
   color: #f7654a;
   margin-bottom: 30px;
   text-align: center;
-  font-family: Font Awesome 5 Pro;
-  font-size: 48px;
-  font-weight: 400;
 }
 .service_title3 {
   color: #000;
@@ -177,44 +172,49 @@ ul {
   letter-spacing: 0.42px;
 }
 .buildings_dates2 {
-  display: flex;
-  flex-direction: column-reverse;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
   gap: 30px;
 }
 .services_item4 {
   text-align: center;
   background-color: #f7f7f7;
-  padding-top: 59px;
-  padding-bottom: 59px;
-  padding-left: 86px;
-  padding-right: 92px;
+  padding: 59px 92px 59px 86px;
 }
 .service_img4 {
   color: #f7654a;
   margin-bottom: 30px;
   text-align: center;
-  font-family: Font Awesome 5 Pro;
-  font-size: 48px;
-  font-weight: 400;
 }
 .service_title4 {
   color: #000;
   text-align: center;
+  width: 172px;
   font-size: 21px;
   font-weight: 500;
   letter-spacing: 0.42px;
 }
 .contacts_dates {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  margin-bottom: 142px;
+}
+.contacts_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img_box {
+  height: 71px;
+
+  text-align: center;
 }
 .contacts_img {
   color: #f7654a;
   margin-bottom: 36px;
   text-align: center;
-  font-family: Font Awesome 5 Pro;
-  font-size: 48px;
-  font-weight: 400;
 }
 .contacts_title {
   color: #999;
@@ -223,10 +223,12 @@ ul {
   font-size: 24px;
   font-weight: 500;
 }
-.contacts_descr {
+.contacts_descr,
+.contact_descr {
   color: #000;
   text-align: center;
-  margin-bottom: 142px;
+  display: block;
+  width: 200px;
   font-size: 24px;
   font-weight: 500;
 }

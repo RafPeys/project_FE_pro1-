@@ -88,17 +88,20 @@ const array5 = [
   {
     img: "./images/adress.png",
     title: "Адрес:",
-    description: "УЛИЦА МИРА 140, ОФИС 140-142",
+    description: "УЛИЦА МИРА 140,",
+    description1: "ОФИС 140-142",
   },
   {
     img: "./images/telefon.png",
     title: "Телефон:",
-    description: "8 (812) 111-22-33 8 (812) 111-22-33",
+    description: "8 (812) 111-22-33",
+    description1: "8 (812) 111-22-33",
   },
   {
     img: "./images/watch.png",
     title: "Время Работы:",
-    description: "ПН-СБ 10:00 - 20:00",
+    description: "ПН-СБ",
+    description1: "10:00 - 20:00",
   },
   {
     img: "./images/e-mail.png",
@@ -197,7 +200,7 @@ function buildingProjects2(element) {
   const image2 = document.createElement("img");
   image2.setAttribute("class", "service_img4");
   const imgtitle2 = document.createElement("p");
-  imgtitle2.setAttribute("class", "services_title4");
+  imgtitle2.setAttribute("class", "service_title4");
 
   image2.setAttribute("src", element.img);
   image2.setAttribute("alt", element.title);
@@ -219,6 +222,8 @@ const contacts = document.querySelector(".contacts_dates");
 function renderContactItem(element) {
   const item = document.createElement("li");
   item.setAttribute("class", "contacts_item");
+  const divContainer = document.createElement("div");
+  divContainer.setAttribute("class", "img_box");
   const img = document.createElement("img");
   img.setAttribute("class", "constacts_img");
   const title = document.createElement("p");
@@ -231,7 +236,15 @@ function renderContactItem(element) {
   title.innerText = element.title;
   description.innerText = element.description;
 
-  item.append(img, title, description);
+  divContainer.append(img);
+  if (element.description1) {
+    const description1 = document.createElement("p");
+    description1.innerText = element.description1;
+    description1.setAttribute("class", "contact_descr");
+    item.append(divContainer, title, description, description1);
+  } else {
+    item.append(divContainer, title, description);
+  }
 
   return item;
 }
