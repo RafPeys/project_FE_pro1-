@@ -274,3 +274,22 @@ ul {
   width: 450px;
   height: 451px;
 }
+.modal_container {
+  position: relative;
+  padding: 15px;
+  padding-top: 100px;
+}
+.title_modal {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-weight: 500;
+}
+.btn_close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 20%;
+  background-color: #f7654a;
+}

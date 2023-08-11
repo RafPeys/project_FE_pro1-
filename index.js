@@ -267,13 +267,21 @@ const createModal = () => {
   const titleForModal = document.createElement("p");
   titleForModal.setAttribute("class", "title_modal");
   titleForModal.innerText = "Наши услуги";
+  const modalContainer = document.createElement("div");
+  modalContainer.setAttribute("class", "modal_container");
   const btnClose = document.createElement("button");
-  btn.innerText = "Закрыть";
+  btnClose.setAttribute("class", "btn_close");
+  btnClose.classList.add("fa-solid");
+  btnClose.classList.add("fa-xmark");
 
-  modalWindow.append(titleForModal, btnClose);
+  btnClose.addEventListener("click", () => {
+    backdrop.remove();
+  });
+
+  modalContainer.append(titleForModal, btnClose);
+  modalWindow.append(modalContainer);
   backdrop.append(modalWindow);
   body.append(backdrop);
-  console.log();
 };
 
 btn.addEventListener("click", createModal);
